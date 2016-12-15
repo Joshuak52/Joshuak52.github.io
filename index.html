@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head Tag -->
+
+<head>
+    <title>Bianca Jett Photography</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<!-- Header Tag -->
+<header>
+
+    <ul class="topnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="right"><a href="request.html">Request a session</a></li>
+    </ul>
+
+</header>
+
+<!-- Body Tag -->
+
+<body>
+
+    <center><img class="mySlides" src="https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-8/s960x960/14884578_1456634911016805_9144591014713488588_o.jpg?oh=9f9dcd46f15a215eba26bbaeb839a210&oe=58EB7A37">
+        <img class="mySlides" src="https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-8/s960x960/14884661_1456624364351193_5506555119495968859_o.jpg?oh=104a616470f3a39d46af9264644e85b4&oe=58F88705">
+        <img class="mySlides" src="https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-8/s960x960/14566356_1456634924350137_5581496058566461586_o.jpg?oh=b6c513ee82291da7a3b8efd51e0376ce&oe=58F24913">
+        <img class="mySlides" src="https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-8/q82/s960x960/14882366_1456634937683469_7897949618485489866_o.jpg?oh=3c251f64912a927391053dc113a0e414&oe=58BA94E5"></center>
+
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+                slideIndex = 1
+            }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+
+    </script>
+
+</body>
+
+<footer id="footer">
+    <p><font size="3">Copyright &copy; Bianca Jett Photography</font></p>
+    <a title="Click here to check out our twitter page!" href="http://Twitter.com">
+        <img id="twitter" src="http://www.clipartkid.com/images/856/new-twitter-logo-vector-eps-free-graphics-download-C44755-clipart.png"></a>
+    <a title="Click here to check out our instagram page!" href="http://Instagram.com">&nbsp;&nbsp;
+            <img id="instagram" src="http://www.bridgeoffaith.org/instagram-logo.gif">
+            &nbsp;&nbsp;</a>
+    <a title="Click here to check out our facebook page!" href="http://Facebook.com">
+        <img id="facebook" src="http://vignette2.wikia.nocookie.net/warframe/images/f/f9/Facebook-logo-icon-vectorcopy-big_copy.png/revision/latest?cb=20131229102704">
+    </a>
+</footer>
+
+</html>
